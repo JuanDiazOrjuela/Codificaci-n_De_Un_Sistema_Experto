@@ -50,7 +50,7 @@ history = model.fit(x_train, y_train, epochs=15, validation_data=(x_test, y_test
 test_loss, test_acc = model.evaluate(x_test, y_test, verbose=2)
 print(f'\nPrecisión final del prototipo: {test_acc*100:.2f}%')
 
-# 5. RESULTADOS VISUALES (Para mostrar en tu video)
+# 5. RESULTADOS VISUALES
 def mostrar_prediccion(n):
     pred = model.predict(x_test[n:n+1])
     nombres = ['Cuadrado', 'Triángulo', 'Círculo']

@@ -29,7 +29,7 @@ def generar_figuras(cantidad=400):
 x_train, y_train = generar_figuras(1200)
 x_test, y_test = generar_figuras(300)
 
-# 2. DISEÑO DE LA RED NEURONAL (Arquitectura solicitada)
+# 2. DISEÑO DE LA RED NEURONAL
 model = models.Sequential([
     layers.Flatten(input_shape=(28, 28)),          # Entrada: 784 neuronas
     layers.Dense(128, activation='relu'),          # Capa oculta 1 con ReLU
